@@ -7,7 +7,7 @@ The API call to Firebase to directly set the number of current votes on a post, 
 When the upvote or downvote button is clicked, the intercept of packets is started. Once the data update call of the Firebase API comes up, the `req0__data_` parameter of the body can be opened. It is a URL encoded json, where inside the `total_votes` field, we update the value of `integerValue` to any number of votes we want.
 
 #### Proof of Concept
-![Showing how packet is intercepted and exploitated]()
+![Showing how packet is intercepted and exploitated](https://github.com/bismuth01/bug-reports/blob/main/LNMDoubts/arbitrary_vote_setting/Votes_setting.mp4)
 
 ## CVSS Score Summary
 <h3>🧮 CVSS Score Summary</h3>
