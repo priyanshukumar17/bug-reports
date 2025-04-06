@@ -1,4 +1,10 @@
-# Username spoofing in comments
+# User profile picture and name spoofing in comments
+
+## Brief
+When adding a comment, the API calls directly to Firebase with the details of the comment and the commentor. This call can be intercepted and custom details can be sent which gets displayed on the website.
+
+## Exploitation
+When posting a comment, we can start intercepting the packets and wait for the Firebase API write call which updates the comments for a particular post. We intercept it and check the body.
 
 ## Author
 <table>
