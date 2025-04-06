@@ -10,8 +10,6 @@ When the upvote or downvote button is clicked, the intercept of packets is start
 ![Showing how packet is intercepted and exploitated](https://github.com/bismuth01/bug-reports/blob/main/LNMDoubts/arbitrary_vote_setting/Votes_setting.mp4)
 
 ## CVSS Score Summary
-<h3>🧮 CVSS Score Summary</h3>
-
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr style="background-color: #f2f2f2;">
@@ -70,7 +68,7 @@ When the upvote or downvote button is clicked, the intercept of packets is start
 <p><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N">🔗 Open in CVSS Calculator</a></p>
 
 ## Root Cause
-The cause is that everytime a vote is added, the number of total votes is re-written directly through the Firebase API call. No checks on the server side are done to make sure the number changes are done in a valid or authorized manner.
+Everytime a vote is added, the number of total votes is re-written directly through the Firebase API call. No checks on the server side are done to make sure the number changes are done in a valid or authorized manner.
 
 ## Recovery
 Since, the total number of votes are directly re-written, can only be recovered through searching through the logs and manually chaning them.
