@@ -1,4 +1,4 @@
-# Setting Arbitrary number of votes in a post
+# Username spoofing in comments
 
 ## Author
 <table>

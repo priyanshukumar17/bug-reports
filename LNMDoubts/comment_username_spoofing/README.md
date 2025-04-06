@@ -1,4 +1,4 @@
-# Setting Arbitrary number of votes in a post
+# Arbitrary profile picture file in comments
 
 ## Author
 <table>
